@@ -33,7 +33,7 @@ const Layout = ({ children }) => (
         <>
           <GlobalStyle />
             <Header />
-            <main>{children}</main>
+            <main role="main">{children}</main>
             <Footer />
         </>
       </ThemeProvider>
