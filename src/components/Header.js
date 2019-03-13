@@ -15,11 +15,15 @@ const StyledHeader = styled.header`
     margin: 1em 0;
   }
 
+  li.is-current {
+    pointer-events: none;
+  }
+
   li a {
     text-decoration: none;
   }
 
-  li.is-current a::after {
+  li a::after {
     content: '';
     background-color: #ffc857;
     display: inline-block;
@@ -30,7 +34,7 @@ const StyledHeader = styled.header`
     margin-left: 1em;
   }
 
-  li a::after {
+  li.is-current a::after {
     background-color: #ffffff;
     content: '';
     display: inline-block;
@@ -50,11 +54,11 @@ const Header = () => {
           items={['section1', 'section2', 'section3', 'section4', 'section5']}
           currentClassName="is-current"
         >
-          <li><a href="#section1">section1</a></li>
-          <li><a href="#section2">section2</a></li>
-          <li><a href="#section3">section3</a></li>
-          <li><a href="#section4">section4</a></li>
-          <li><a href="#section5">section5</a></li>
+          <li><a href="#section1"><span>section1</span></a></li>
+          <li><a href="#section2"><span>section2</span></a></li>
+          <li><a href="#section3"><span>section3</span></a></li>
+          <li><a href="#section4"><span>section4</span></a></li>
+          <li><a href="#section5"><span>section5</span></a></li>
         </Scrollspy>
       </nav>
     </StyledHeader>
