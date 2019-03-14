@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import styled from 'styled-components'
 import Scrollspy from 'react-scrollspy'
 
@@ -6,10 +6,14 @@ const StyledHeader = styled.header`
   position: fixed;
   right: 0;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1em;
+
+  .curbappeal-header-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+  }
 
   li {
     margin: 1em 0;
@@ -72,23 +76,33 @@ const StyledHeader = styled.header`
   }
 `
 
-const Header = () => {
-  return (
-    <StyledHeader>
-      <nav role="navigation">
-        <Scrollspy
-          items={['section1', 'section2', 'section3', 'section4', 'section5']}
-          currentClassName="is-current"
-        >
-          <li><a href="#section1"><span>section1</span></a></li>
-          <li><a href="#section2"><span>section2</span></a></li>
-          <li><a href="#section3"><span>section3</span></a></li>
-          <li><a href="#section4"><span>section4</span></a></li>
-          <li><a href="#section5"><span>section5</span></a></li>
-        </Scrollspy>
-      </nav>
-    </StyledHeader>
-  )
+class Header extends Component {
+
+  render() {
+    return (
+      <StyledHeader>
+        <button class="hamburger hamburger--emphatic" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <div class="curbappeal-header-inner">
+          <nav role="navigation">
+            <Scrollspy
+              items={['section1', 'section2', 'section3', 'section4', 'section5']}
+              currentClassName="is-current"
+            >
+              <li><a href="#section1"><span>section1</span></a></li>
+              <li><a href="#section2"><span>section2</span></a></li>
+              <li><a href="#section3"><span>section3</span></a></li>
+              <li><a href="#section4"><span>section4</span></a></li>
+              <li><a href="#section5"><span>section5</span></a></li>
+            </Scrollspy>
+          </nav>
+        </div>
+      </StyledHeader>
+    )
+  }
 }
 
 export default Header
