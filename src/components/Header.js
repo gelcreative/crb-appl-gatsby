@@ -100,7 +100,7 @@ const StyledHeader = styled.header`
         transition-delay: 100ms;
         color: ${props => props.theme.white};
         background-color: ${props => props.theme.primaryColor};
-        padding: 3px 1em;
+        padding: 1px 1em;
         border-radius: 4px;
       }
     }
