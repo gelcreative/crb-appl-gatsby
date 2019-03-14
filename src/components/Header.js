@@ -119,7 +119,7 @@ class Header extends Component {
     })
   }
 
-  hamburgerClickBehaviour = (e) => {
+  hamburgerClickBehaviour = () => {
     const hamburgerButton = document.querySelector('.hamburger')
     const theNav  = document.querySelector('.curbappeal-header-inner nav')
     hamburgerButton.classList.toggle('is-active')
