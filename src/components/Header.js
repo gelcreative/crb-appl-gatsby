@@ -45,7 +45,7 @@ const StyledHeader = styled.header`
         width: 0.5em;
         border: 2px solid #ffc857;
         border-radius: 50%;
-        margin-left: 1em;
+        margin-left: 1.25em;
       }
 
       span {
@@ -65,7 +65,7 @@ const StyledHeader = styled.header`
         width: 0.5em;
         border: none;
         border-radius: 50%;
-        margin-left: 1em;
+        margin-left: 1.25em;
       }
 
       &:hover span {
@@ -81,6 +81,10 @@ const StyledHeader = styled.header`
         transform: translateX(-150%);
         transition: transform 300ms ease-in-out, opacity 100ms ease-out;
         transition-delay: 100ms;
+        color: #ffffff;
+        background-color: #ffc856;
+        padding: 3px 1em;
+        border-radius: 4px;
       }
     }
   }
