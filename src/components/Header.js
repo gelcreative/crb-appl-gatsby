@@ -72,6 +72,7 @@ const StyledHeader = styled.header`
         opacity: 1;
         transform: translateX(0);
         transition: transform 300ms ease-in-out, opacity 700ms ease-in;
+        transition-delay: 100ms;
       }
 
       span {
@@ -79,6 +80,7 @@ const StyledHeader = styled.header`
         opacity: 0;
         transform: translateX(-150%);
         transition: transform 300ms ease-in-out, opacity 100ms ease-out;
+        transition-delay: 100ms;
       }
     }
   }
