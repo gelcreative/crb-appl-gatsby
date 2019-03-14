@@ -8,9 +8,14 @@ const GlobalStyle = createGlobalStyle`
   @import url(${cssreset});
   @import url(${hamburgers});
 
+  html {
+    font-size: 10px;
+  }
+
   body {
     background-color: ${theme.white};
     font-family: sans-serif;
+    font-size: 1.8rem;
   }
 
   .container {
