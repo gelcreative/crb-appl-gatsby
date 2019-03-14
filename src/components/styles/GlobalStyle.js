@@ -18,6 +18,15 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.8rem;
   }
 
+  h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+
   .container {
     width: 1200px;
     max-width: 95%;
