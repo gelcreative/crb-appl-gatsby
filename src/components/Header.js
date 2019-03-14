@@ -23,14 +23,20 @@ const StyledHeader = styled.header`
         display: inline-block;
         height: 0.5em;
         width: 0.5em;
-        border: 1px solid #000000;
+        border: 2px solid #ffc857;
         border-radius: 50%;
         margin-left: 1em;
+      }
+
+      span {
+        opacity: 1;
+        transform: translateX(0);
       }
     }
 
     a {
       text-decoration: none;
+
       &::after {
         content: '';
         background-color: #ffc857;
@@ -40,6 +46,19 @@ const StyledHeader = styled.header`
         border: none;
         border-radius: 50%;
         margin-left: 1em;
+      }
+
+      &:hover span {
+        opacity: 1;
+        transform: translateX(0);
+        transition: transform 300ms ease-in-out, opacity 700ms ease-in;
+      }
+
+      span {
+        display: inline-block;
+        opacity: 0;
+        transform: translateX(-150%);
+        transition: transform 300ms ease-in-out, opacity 100ms ease-out;
       }
     }
   }
