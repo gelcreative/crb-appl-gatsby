@@ -1,14 +1,27 @@
-import React from "react"
+import React from 'react'
+import styled from 'styled-components'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import CurbAppealLogo from '../components/CurbAppealLogo'
+
+const StyledIndexPage = styled.article`
+  .curbappeal-masthead-logo-container {
+    max-width: 100px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+`
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <article>
+    <StyledIndexPage>
       <section id="section1" style={{ height: '500px', backgroundColor: '#DCDCDC' }}>
         <div className="container">
+          <div className="curbappeal-masthead-logo-container">
+            <CurbAppealLogo />
+          </div>
           <h1>Hi people</h1>
           <h2>Section 1</h2>
         </div>
@@ -33,7 +46,7 @@ const IndexPage = () => (
           <h2>Section 5</h2>
         </div>
       </section>
-    </article>
+    </StyledIndexPage>
   </Layout>
 )
 
