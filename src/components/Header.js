@@ -13,36 +13,35 @@ const StyledHeader = styled.header`
 
   li {
     margin: 1em 0;
-  }
 
-  li.is-current {
-    pointer-events: none;
-  }
+    &.is-current {
+      pointer-events: none;
 
-  li a {
-    text-decoration: none;
-  }
+      a::after {
+        background-color: #ffffff;
+        content: '';
+        display: inline-block;
+        height: 0.5em;
+        width: 0.5em;
+        border: 1px solid #000000;
+        border-radius: 50%;
+        margin-left: 1em;
+      }
+    }
 
-  li a::after {
-    content: '';
-    background-color: #ffc857;
-    display: inline-block;
-    height: 0.5em;
-    width: 0.5em;
-    border: none;
-    border-radius: 50%;
-    margin-left: 1em;
-  }
-
-  li.is-current a::after {
-    background-color: #ffffff;
-    content: '';
-    display: inline-block;
-    height: 0.5em;
-    width: 0.5em;
-    border: 1px solid #000000;
-    border-radius: 50%;
-    margin-left: 1em;
+    a {
+      text-decoration: none;
+      &::after {
+        content: '';
+        background-color: #ffc857;
+        display: inline-block;
+        height: 0.5em;
+        width: 0.5em;
+        border: none;
+        border-radius: 50%;
+        margin-left: 1em;
+      }
+    }
   }
 `
 
