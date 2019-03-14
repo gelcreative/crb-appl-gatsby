@@ -62,6 +62,14 @@ const StyledHeader = styled.header`
       }
     }
   }
+
+  @media (max-width: 769px) {
+    li a span,
+    li.is-current span {
+      opacity: 0;
+      transform: translateX(-150%);
+    }
+  }
 `
 
 const Header = () => {
