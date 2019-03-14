@@ -14,6 +14,10 @@ const StyledHeader = styled.header`
     right: 0;
     z-index: 1;
 
+    &:focus {
+      outline: none;
+    }
+
     .hamburger-inner {
       background-color: ${props => props.theme.secondaryColor};
       &::before,
@@ -76,7 +80,7 @@ const StyledHeader = styled.header`
         display: inline-block;
         height: 0.5em;
         width: 0.5em;
-        border: none;
+        border: 2px solid transparent;
         border-radius: 50%;
         margin-left: 1.25em;
       }
