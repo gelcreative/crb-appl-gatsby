@@ -6,23 +6,21 @@ const StyledHeader = styled.header`
   position: fixed;
   right: 0;
   height: 100%;
+  padding: 1em;
 
   .hamburger {
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
     z-index: 1;
   }
 
   .curbappeal-header-inner {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    position: relative;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1em;
     z-index: 0;
   }
 
