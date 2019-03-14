@@ -6,10 +6,25 @@ import SEO from '../components/seo'
 import CurbAppealLogo from '../components/CurbAppealLogo'
 
 const StyledIndexPage = styled.article`
-  .curbappeal-masthead-logo-container {
-    max-width: 100px;
-    margin: 0 auto;
-    padding: 2rem 0;
+
+  section {
+    padding: 10rem 0;
+  }
+
+  .curbappeal-masthead-section {
+    text-align: center;
+    padding-top: 0;
+
+    .curbappeal-masthead-content-wrapper {
+      margin-bottom: 5rem;
+
+      &:first-child {
+        max-width: 100px;
+        margin: 0 auto 5rem;
+        text-align: center;
+        padding: 2rem 0;
+      }
+    }
   }
 `
 
@@ -17,15 +32,15 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <StyledIndexPage>
-      <section id="section1" style={{ height: '500px', backgroundColor: '#DCDCDC' }}>
+      <section id="section1" className="curbappeal-masthead-section" style={{ backgroundColor: '#DCDCDC' }}>
         <div className="container">
-          <div className="curbappeal-masthead-logo-container">
+          <div className="curbappeal-masthead-content-wrapper">
             <CurbAppealLogo />
           </div>
-          <div className="curbappeal-masthead-video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/MAUUilvolG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div className="curbappeal-masthead-content-wrapper">
+            <iframe title="Curb Appeal Video" width="560" height="315" src="https://www.youtube.com/embed/MAUUilvolG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <div className="curbappeal-masthead-heading-container">
+          <div className="curbappeal-masthead-content-wrapper">
             <h1>event info here - who. what. when.</h1>
           </div>
         </div>
