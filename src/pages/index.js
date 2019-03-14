@@ -22,8 +22,12 @@ const IndexPage = () => (
           <div className="curbappeal-masthead-logo-container">
             <CurbAppealLogo />
           </div>
-          <h1>Hi people</h1>
-          <h2>Section 1</h2>
+          <div className="curbappeal-masthead-video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MAUUilvolG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div className="curbappeal-masthead-heading-container">
+            <h1>event info here - who. what. when.</h1>
+          </div>
         </div>
       </section>
       <section id="section2" style={{ height: '500px', backgroundColor: '#D3D3D3' }}>
