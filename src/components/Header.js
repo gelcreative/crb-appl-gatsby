@@ -13,6 +13,18 @@ const StyledHeader = styled.header`
     top: 0;
     right: 0;
     z-index: 1;
+    .hamburger-inner {
+      background-color: #868687;
+      &::before,
+      &::after {
+        background-color: #868687;
+      }
+    }
+
+    &.is-active .hamburger-inner::before,
+    &.is-active .hamburger-inner::after {
+      background-color: #868687;
+    }
   }
 
   .curbappeal-header-inner {
