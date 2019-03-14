@@ -13,17 +13,18 @@ const StyledHeader = styled.header`
     top: 0;
     right: 0;
     z-index: 1;
+
     .hamburger-inner {
-      background-color: #868687;
+      background-color: ${props => props.theme.secondaryColor};
       &::before,
       &::after {
-        background-color: #868687;
+        background-color: ${props => props.theme.secondaryColor};
       }
     }
 
     &.is-active .hamburger-inner::before,
     &.is-active .hamburger-inner::after {
-      background-color: #868687;
+      background-color: ${props => props.theme.secondaryColor};
     }
   }
 
@@ -55,7 +56,7 @@ const StyledHeader = styled.header`
         display: inline-block;
         height: 0.5em;
         width: 0.5em;
-        border: 2px solid #ffc857;
+        border: 2px solid ${props => props.theme.primaryColor};
         border-radius: 50%;
         margin-left: 1.25em;
       }
@@ -71,7 +72,7 @@ const StyledHeader = styled.header`
 
       &::after {
         content: '';
-        background-color: #ffc857;
+        background-color: ${props => props.theme.primaryColor};
         display: inline-block;
         height: 0.5em;
         width: 0.5em;
@@ -93,8 +94,8 @@ const StyledHeader = styled.header`
         transform: translateX(-150%);
         transition: transform 300ms ease-in-out, opacity 100ms ease-out;
         transition-delay: 100ms;
-        color: #ffffff;
-        background-color: #ffc856;
+        color: ${props => props.theme.white};
+        background-color: ${props => props.theme.primaryColor};
         padding: 3px 1em;
         border-radius: 4px;
       }
