@@ -24,6 +24,13 @@ const StyledHeader = styled.header`
     z-index: 0;
   }
 
+  nav.is-active {
+    span {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   li {
     margin: 1em 0;
 
@@ -31,7 +38,7 @@ const StyledHeader = styled.header`
       pointer-events: none;
 
       a::after {
-        background-color: #ffffff;
+        background: transparent;
         content: '';
         display: inline-block;
         height: 0.5em;
@@ -82,20 +89,52 @@ const StyledHeader = styled.header`
       opacity: 0;
       transform: translateX(-150%);
     }
+
+    nav.is-active {
+      span {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
   }
 `
 
 class Header extends Component {
 
+  componentDidMount() {
+    this.navItemClickBehaviour()
+  }
+
+  navItemClickBehaviour = () => {
+    const navItems = Array.from(document.querySelectorAll('.curbappeal-header-inner li'))
+    navItems.map(navItem => {
+      navItem.addEventListener('click', () => {
+        const activeItems = Array.from(document.querySelectorAll('.is-active'))
+        activeItems.map(activeItem => {
+          activeItem.classList.toggle('is-active')
+          return null
+        })
+      })
+      return null
+    })
+  }
+
+  hamburgerClickBehaviour = (e) => {
+    const hamburgerButton = document.querySelector('.hamburger')
+    const theNav  = document.querySelector('.curbappeal-header-inner nav')
+    hamburgerButton.classList.toggle('is-active')
+    theNav.classList.toggle('is-active')
+  }
+
   render() {
     return (
       <StyledHeader>
-        <button class="hamburger hamburger--emphatic" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
+        <button className="hamburger hamburger--emphatic" type="button" onClick={this.hamburgerClickBehaviour}>
+          <span className="hamburger-box">
+            <span className="hamburger-inner"></span>
           </span>
         </button>
-        <div class="curbappeal-header-inner">
+        <div className="curbappeal-header-inner">
           <nav role="navigation">
             <Scrollspy
               items={['section1', 'section2', 'section3', 'section4', 'section5']}

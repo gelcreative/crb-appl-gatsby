@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <article class="container">
+    <article className="container">
       <h1>Hi people</h1>
       <section id="section1" style={{ height: '500px', backgroundColor: '#DCDCDC' }}>
         <h2>Section 1</h2>
