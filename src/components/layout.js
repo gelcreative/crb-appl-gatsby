@@ -10,10 +10,10 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import { ThemeProvider } from 'styled-components'
 
-import GlobalStyle from './styles/GlobalStyle'
+import GlobalStyle from './styles/globalstyle'
 import theme from './styles/theme'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Header from './header'
+import Footer from './footer'
 
 const Layout = ({ children }) => (
   <StaticQuery
