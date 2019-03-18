@@ -18,7 +18,8 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.8rem;
   }
 
-  h1 {
+  h1,
+  h2 {
     font-size: 4rem;
     text-transform: uppercase;
   }

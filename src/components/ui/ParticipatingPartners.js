@@ -48,7 +48,7 @@ class ParticipatingPartners extends Component {
               {partners.map(({ node: partner}) => (
                 <li key={partner.id}>
                   <Img fluid={partner.frontmatter.image.childImageSharp.fluid} />
-                  <h2>{partner.frontmatter.name}</h2>
+                  <h3>{partner.frontmatter.name}</h3>
                   <p dangerouslySetInnerHTML={{ __html: partner.html}} />
                   <a href={partner.frontmatter.url}>link</a>
                 </li>
