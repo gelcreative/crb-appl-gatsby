@@ -10,7 +10,29 @@ const StyledSponsors = styled.div`
 class Sponsors extends Component {
   render() {
     return (
-      <p>Suuuupppp</p>
+      <StaticQuery
+        query={graphql`
+          query SponsorsQuery {
+            allMarkdownRemark(filter: {frontmatter: {type: {eq: "sponsor"}}}) {
+              edges {
+                node {
+                  frontmatter {
+                    name
+                    image {
+                      childImageSharp {
+                        fluid(maxWidth: 350, quality: 100) {
+                          ...GatsbyImageSharpFluid_tracedSVG
+                        }
+                      }
+                    }
+                    url
+                  }
+                }
+              }
+            }
+          }
+        `}
+      />
     )
   }
 }

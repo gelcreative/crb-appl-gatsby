@@ -21,6 +21,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `sponsors`,
+        path: `${__dirname}/src/sponsors`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
 
