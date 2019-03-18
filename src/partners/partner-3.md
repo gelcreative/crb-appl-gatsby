@@ -1,6 +1,6 @@
 ---
 type: "partner"
-name: "Partner 1"
+name: "Partner 3"
 image: "../images/fa-image.png"
 url: "https://www.google.ca"
 ---
