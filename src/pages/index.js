@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import CurbAppealLogo from '../components/CurbAppealLogo'
-import TicketTimer from '../components/TicketTimer'
+import TicketTimer from '../components/ui/TicketTimer'
 
 const StyledIndexPage = styled.article`
 
