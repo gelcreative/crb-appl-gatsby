@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-plugin-manifest'
+import Img from 'gatsby-image'
 import styled from 'styled-components'
 
-const StyledSponsors = styled.div`
+const StyledSponsors = styled.ul`
   background: purple;
 `
 
@@ -32,6 +32,20 @@ class Sponsors extends Component {
             }
           }
         `}
+        render={data => {
+          const { edges: sponsors } = data.allMarkdownRemark
+          return (
+            <StyledSponsors>
+              {sponsors.map(({ node: sponsor }) => (
+                <ul key={sponsor.id}>
+                  <a href={sponsor.frontmatter.url} target="_blank" rel="noopener noreferrer">
+                    <Img fluid={sponsor.frontmatter.image.childImageSharp.fluid} alt={sponsor.frontmatter.name} />
+                  </a>
+                </ul>
+              ))}
+            </StyledSponsors>
+          )
+        }}
       />
     )
   }
