@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import CurbAppealLogo from '../components/CurbAppealLogo'
 import TicketTimer from '../components/ui/TicketTimer'
+import ParticipatingPartners from '../components/ui/ParticipatingPartners'
 
 const StyledIndexPage = styled.article`
 
@@ -53,7 +54,7 @@ const IndexPage = () => (
       </section>
       <section id="section3" style={{ backgroundColor: '#C0C0C0' }}>
         <div className="container">
-          <h2>Section 3</h2>
+          <ParticipatingPartners />
         </div>
       </section>
       <section id="section4" style={{ backgroundColor: '#A9A9A9' }}>
