@@ -4,7 +4,15 @@ import Img from 'gatsby-image'
 import styled from 'styled-components'
 
 const StyledSponsors = styled.ul`
-  background: purple;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  align-items: center;
+  li {
+    flex: 1 1 250px;
+    max-width: 300px;
+    margin: 0.5em;
+  }
 `
 
 class Sponsors extends Component {
