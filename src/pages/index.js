@@ -66,11 +66,6 @@ const IndexPage = () => (
           <h2>Section 4</h2>
         </div>
       </section>
-      <section id="section5" style={{ backgroundColor: '#808080' }}>
-        <div className="container">
-          <h2>Section 5</h2>
-        </div>
-      </section>
     </StyledIndexPage>
   </Layout>
 )
