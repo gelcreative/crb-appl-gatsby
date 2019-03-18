@@ -1,6 +1,6 @@
 ---
 type: "sponsor"
-name: "Sponsor 1"
+name: "Sponsor 4"
 image: "../images/placeholder-wide.png"
 url: "http://www.google.ca"
 ---
