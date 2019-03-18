@@ -54,7 +54,9 @@ const IndexPage = () => (
       </section>
       <section id="section3" style={{ backgroundColor: '#C0C0C0' }}>
         <div className="container">
+          <h2>Participating Partners</h2>
           <ParticipatingPartners />
+          <h2>Sponsors</h2>
         </div>
       </section>
       <section id="section4" style={{ backgroundColor: '#A9A9A9' }}>
