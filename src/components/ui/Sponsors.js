@@ -37,11 +37,11 @@ class Sponsors extends Component {
           return (
             <StyledSponsors>
               {sponsors.map(({ node: sponsor }) => (
-                <ul key={sponsor.id}>
+                <li key={sponsor.id}>
                   <a href={sponsor.frontmatter.url} target="_blank" rel="noopener noreferrer">
                     <Img fluid={sponsor.frontmatter.image.childImageSharp.fluid} alt={sponsor.frontmatter.name} />
                   </a>
-                </ul>
+                </li>
               ))}
             </StyledSponsors>
           )
