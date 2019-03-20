@@ -7,6 +7,7 @@ import CurbAppealLogo from '../components/CurbAppealLogo'
 import TicketTimer from '../components/ui/TicketTimer'
 import ParticipatingPartners from '../components/ui/ParticipatingPartners'
 import Sponsors from '../components/ui/Sponsors'
+import squarePlaceholder from '../images/fa-image-square.png'
 
 const StyledIndexPage = styled.article`
 
@@ -61,9 +62,30 @@ const IndexPage = () => (
           <Sponsors />
         </div>
       </section>
-      <section id="section4" style={{ backgroundColor: '#A9A9A9' }}>
+      <section id="section4" className="past-events-section" style={{ backgroundColor: '#A9A9A9' }}>
         <div className="container">
-          <h2>Section 4</h2>
+          <div className="past-events-column-left">
+            <h2>Past Events</h2>
+            <p>#BARRIECURBAPPEAL</p>
+          </div>
+          <div className="past-events-column-right">
+            <div>
+              <iframe title="Curb Appeal Video" width="385" height="215" src="https://www.youtube.com/embed/MAUUilvolG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div className="past-events-images-container">
+                <img src={squarePlaceholder} alt=""/>
+                <img src={squarePlaceholder} alt=""/>
+                <img src={squarePlaceholder} alt=""/>
+              </div>
+            </div>
+            <div>
+              <iframe title="Curb Appeal Video" width="385" height="215" src="https://www.youtube.com/embed/MAUUilvolG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div className="past-events-images-container">
+                <img src={squarePlaceholder} alt=""/>
+                <img src={squarePlaceholder} alt=""/>
+                <img src={squarePlaceholder} alt=""/>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </StyledIndexPage>
