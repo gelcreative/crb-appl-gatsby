@@ -19,16 +19,16 @@ const StyledHeader = styled.header`
     }
 
     .hamburger-inner {
-      background-color: ${props => props.theme.secondaryColor};
+      background-color: ${props => props.theme.primaryColor};
       &::before,
       &::after {
-        background-color: ${props => props.theme.secondaryColor};
+        background-color: ${props => props.theme.primaryColor};
       }
     }
 
     &.is-active .hamburger-inner::before,
     &.is-active .hamburger-inner::after {
-      background-color: ${props => props.theme.secondaryColor};
+      background-color: ${props => props.theme.primaryColor};
     }
   }
 

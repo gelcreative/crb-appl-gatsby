@@ -5,9 +5,6 @@ import BBIALogo from '../components/BBIALogo'
 
 const StyledPreFooter = styled.section`
   background-color: ${props => props.theme.tertiaryColor};
-  // padding: 11.5rem 0;
-  // bottom:0;
-  // width:100%;
   .container {
     display: flex;
     align-items: center;
@@ -16,16 +13,21 @@ const StyledPreFooter = styled.section`
     .column {
       margin: 2rem;
     }
-    downtownbarrie-logo-column {
+    .downtownbarrie-logo-column {
       flex: 1;
       max-width: 100px;
     }
     .curbappeal-info-column {
       flex: 1;
-      address {
-        line-height: 1.3;
-        margin-bottom: 1em;
-      }
+      text-align:left;
+      line-height:2.5rem;
+      font-size:1.6rem;
+    }
+    .copywrite {
+      flex: 1;
+      padding:20px;
+      text-align:center;
+      font-size: 1.6rem;   
     }
     .curbappeal-logo-column {
       flex: 1;
@@ -44,21 +46,22 @@ const PreFooter = () => {
           <div className="column curbappeal-info-column">
             <strong>DOWNTOWN BARRIE</strong>
             <address>
-              93 Dunlop Street East, Unit 102 - Barrie, ON L4M 1A8              
+              <a href="https://www.google.com/maps/place/93+Dunlop+St+E+%23102,+Barrie,+ON+L4M+1A6/@44.3892178,-79.689203,17z" target="_blank">93 Dunlop Street East, Unit 102 - Barrie, ON L4M 1A8</a>
             </address>
-            <br />
-            T: (705) 734-1414
+            <a href="tel:+1-705-734-1414">T: (705) 734-1414</a>            
             <br />
             <a href="mailto:INFO@DOWNTOWNBARRIE.CA" >INFO@DOWNTOWNBARRIE.CA</a>                      
-            <div className="copywrite">
-              <small>&copy; {new Date().getFullYear()} Downtown Barrie Business Improvement Area</small>
-            </div>
           </div>
           <div className="column curbappeal-logo-column">
             <CurbAppealLogo />
           </div>
           
-        </div>        
+        </div>
+        <div className="container">
+          <div className="copywrite">
+            <small>&copy; {new Date().getFullYear()} Downtown Barrie Business Improvement Area</small>
+          </div> 
+        </div>       
     </StyledPreFooter>
   )
 }

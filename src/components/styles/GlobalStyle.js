@@ -11,12 +11,32 @@ const GlobalStyle = createGlobalStyle`
   html {
     font-size: 10px;
   }
-
+  section {
+    padding-top:4rem;
+    padding-bottom:4rem;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+  }
   body {
     background-color: ${theme.white};
     font-family: futura-pt, sans-serif;
     font-size: 1.8rem;    
     color: ${theme.primaryColor};
+  }
+
+  .white {
+    color:${theme.white};
+  }
+
+  a, a:active, a:visited {
+    color:${theme.primaryColor};
+    text-decoration:none;
+    display:inline-block;
+  }
+
+  a:hover {
+    cursor: pointer;
   }
 
   .container {
@@ -27,13 +47,24 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    border:1px solid blue;
     text-align:center;
+    &.center {
+      height:100%;
+    }
+  }
+  .container-partners {
+    margin-top:-50px;
+  }
+  .space-between {
+    justify-content: space-between;
+  }
+  .column {
+    flex:1;
   }
   #intro {
     margin-bottom:40px;
   }
-  h1, h2, h3 {
+  h1, h2, h3, h4, h5 {
     width:100%;
   }
   h1, h2, h3, h4, h5 {
@@ -56,9 +87,64 @@ const GlobalStyle = createGlobalStyle`
   p {
     margin-top:10px;
     line-height: 2.5rem;
+    width:100%;
+  }
+  .left-justify {
+    text-align:left;
   }
 
-  
+  .chef-logo-background {
+    background:${theme.secondaryColor};
+    height:200px;
+  }
+
+  .column.chef-column {
+    border:1px solid ${theme.grey};
+    max-width:18%;
+    padding-bottom:50px;
+    // margin:0 15px;
+    h4 {
+      font-weight:600;
+      font-size:2.25rem;
+      text-transform:uppercase;
+      margin-top:30px;
+    }
+    p {
+      box-sizing:border-box;
+      padding:10px 10px 40px 10px;
+    }
+    a {
+      border-bottom: 1px solid ${theme.grey};
+    }
+  }
+
+  button {
+    border:0;
+    border-radius:.5rem;
+    padding:1.75rem 3rem;
+    font-size:1.6rem;
+    width:440px;
+    text-transform:uppercase;
+  }
+  .button-light {
+    background:${theme.secondaryColor};
+    color:${theme.white};
+  }
+  .button-dark {
+    background:${theme.primaryColor};
+    color:${theme.white};
+  }
+  .row {
+    display:flex;
+    align-items: center;
+    justify-content: stretch;
+    width:100%;
+  }
+  @media screen and (max-width:600px){
+    .column {
+      flex-direction: column;
+    }
+  }
 `
 
 export default GlobalStyle
