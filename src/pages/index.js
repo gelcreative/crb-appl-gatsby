@@ -20,6 +20,10 @@ import oliveoilco from '../images/partners/BarrieOliveOil-Co-logo-white.png'
 import homestead from '../images/partners/Homestead-logo-white.png'
 import ripejuice from '../images/partners/RIPE-Juicery-logo-white.png'
 import jadore from '../images/partners/Jadore-logo-white.png'
+import iconYouTube from '../images/iconYouTube.png'
+import iconTwitter from '../images/iconTwitter.png'
+import iconFacebook from '../images/iconFacebook.png'
+import iconInstagram from '../images/iconInstagram.png'
 
 
 const partners = [
@@ -45,6 +49,11 @@ const IndexPage = () => (
       <section id="section1" style={{ height: '500px', backgroundColor: '#DCDCDC', backgroundImage: `url(${wallbg})` }}>
         <div className="container">
           <CurbAppealLogo className="headerLogo" />    
+        </div>
+      </section>
+      <section id="promoVideo" style={{ height: '378px', background: 'transparent', marginTop: '-189px', padding: '0' }}>
+        <div className="container">
+          <iframe width="672" height="378" src="https://www.youtube.com/embed/tEKA6Cdspw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
         </div>
       </section>
       <section id="section2" style={{ height: '500px', backgroundColor: '#fff', backgroundImage: `url(${spicebg})`, backgroundSize: 'initial', backgroundPosition:'right center' }}>
@@ -117,6 +126,14 @@ const IndexPage = () => (
           <div className="column left-justify white">
             <h2>PastEvents</h2>
             <h2>#BARRIECURBAPPEAL</h2>
+            <a href="facebook.com"><img src={iconFacebook} alt="Facebook icon" /></a>
+            <a href="twitter.com"><img src={iconTwitter} alt="Twitter icon" /></a>
+            <a href="instagram.com"><img src={iconInstagram} alt="Instagram icon" /></a>
+            <a href="youtube.com"><img src={iconYouTube} alt="YouTube icon" /></a>
+          </div>
+          <div className="column">
+            <iframe width="448" height="252" src="https://www.youtube.com/embed/tEKA6Cdspw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="448" height="252" src="https://www.youtube.com/embed/BktyzM3hRSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
           </div>
           <div className="column white">
             THUMBNAILS

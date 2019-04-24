@@ -96,6 +96,9 @@ const GlobalStyle = createGlobalStyle`
   .chef-logo-background {
     background:${theme.secondaryColor};
     height:200px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
   }
 
   .column.chef-column {
