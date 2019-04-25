@@ -1,15 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
+import SubscriptionForm from './SubscriptionForm'
 
 const StyledFooter = styled.footer`
   background-color: ${props => props.theme.tertiaryColor};
-  padding: 2.5rem 0;
+  padding: 0 0;
   position:fixed;
   bottom:0;
   width:100%;
   color: ${props => props.theme.white};
+  section {
+    padding:0 0;
+    height:125px;
+  }
   .container {
     display: flex;
+    // width:100%;
+    height:100%;
     align-items: center;
     justify-content: stretch;
     flex-wrap: wrap;
@@ -18,6 +25,9 @@ const StyledFooter = styled.footer`
       margin: 2rem;
     }
   }
+  footer {
+    height:inherit;
+  }
 `
 
 const Footer = () => {
@@ -25,17 +35,7 @@ const Footer = () => {
     <StyledFooter>
       <section>
         <footer>
-          <div className="container">
-            <div className="row">
-              <div className="column">
-                <h4><em>BECOME A</em> CURB APPEAL INSIDER</h4>
-                <p>Join our email list to get alerted with Curb Appeal event updates.</p>
-              </div>
-              <div className="column">
-                <button className="button-light">Subscribe Now</button>
-              </div>
-            </div>
-          </div>
+              <SubscriptionForm />           
         </footer>
       </section>
     </StyledFooter>

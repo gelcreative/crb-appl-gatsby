@@ -44,13 +44,13 @@ const PreFooter = () => {
             <BBIALogo />
           </div>
           <div className="column curbappeal-info-column">
-            <strong>DOWNTOWN BARRIE</strong>
+            <strong>Downtown Barrie Business Association (BIA)</strong>
             <address>
-              <a href="https://www.google.com/maps/place/93+Dunlop+St+E+%23102,+Barrie,+ON+L4M+1A6/@44.3892178,-79.689203,17z" target="_blank">93 Dunlop Street East, Unit 102 - Barrie, ON L4M 1A8</a>
+              <a href="https://www.google.com/maps/place/93+Dunlop+St+E+%23102,+Barrie,+ON+L4M+1A6/@44.3892178,-79.689203,17z" target="_blank">93 Dunlop Street East, Unit 102 Barrie, ON L4M 1A8</a>
             </address>
             <a href="tel:+1-705-734-1414">T: (705) 734-1414</a>            
             <br />
-            <a href="mailto:INFO@DOWNTOWNBARRIE.CA" >INFO@DOWNTOWNBARRIE.CA</a>                      
+            <a href="mailto:info@downtownbarrie.ca" >info@downtownbarrie.ca</a>                      
           </div>
           <div className="column curbappeal-logo-column">
             <CurbAppealLogo />

@@ -61,6 +61,12 @@ const GlobalStyle = createGlobalStyle`
   .column {
     flex:1;
   }
+  .socialIcons {
+    margin-bottom: 90px;
+    a {
+      margin-right:10px;
+    }
+  } 
   #intro {
     margin-bottom:40px;
   }
@@ -88,9 +94,12 @@ const GlobalStyle = createGlobalStyle`
     margin-top:10px;
     line-height: 2.5rem;
     width:100%;
+    max-width: 900px;
+    margin: 0 auto;
   }
   .left-justify {
     text-align:left;
+    padding-right:100px;
   }
 
   .chef-logo-background {
@@ -120,8 +129,7 @@ const GlobalStyle = createGlobalStyle`
       border-bottom: 1px solid ${theme.grey};
     }
   }
-
-  button {
+  button, input[type='submit'] {
     border:0;
     border-radius:.5rem;
     padding:1.75rem 3rem;

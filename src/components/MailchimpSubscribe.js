@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import jsonp from "jsonp";
 import toQueryString from "to-querystring";
-import SimpleForm from "./SimpleForm";
 
 const getAjaxUrl = url => url.replace("/post?", "/post-json?");
 
@@ -58,16 +57,6 @@ class MailchimpSubscribe extends React.Component {
 MailchimpSubscribe.propTypes = {
   render: PropTypes.func,
   url: PropTypes.string.isRequired
-};
-
-MailchimpSubscribe.defaultProps = {
-  render: ({ subscribe, status, message }) => (
-    <SimpleForm
-      status={status}
-      message={message}
-      onSubmitted={formData => subscribe(formData)}
-    />
-  )
 };
 
 export default MailchimpSubscribe;

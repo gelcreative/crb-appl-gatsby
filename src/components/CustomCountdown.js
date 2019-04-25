@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Countdown from 'react-countdown-now'
 
 // Random component
-const Completionist = () => <div><h2 className="white">Tickets are now available!</h2><p>Don't miss out - purchase your tickets before they're gone!</p><button className="button-dark">Click Here</button></div>
+const Completionist = () => <div><h2 className="white">Tickets now available!</h2><p>Don't miss out! Purchase your tickets before it sells out!</p><br /><button className="button-dark">BUY TICKETS NOW</button></div>
 
 // Renderer callback with condition
 

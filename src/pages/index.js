@@ -61,11 +61,11 @@ const IndexPage = () => (
           <div className="column">
             <div id="intro">
               <h2><em>AN</em> OUTDOOR DINING EXPERIENCE</h2>
-              <h3>5 Courses. 5 Chefs. 1 Amazing Location</h3>
+              <h3>5 Courses • 5 Chefs • 1 Amazing Location</h3>
               <p>This event shines the light on a unique pocket of real estate in Barrie's downtown core each year. We've selected some of the city's best chefs to showcase their world-class talents. Each of the five courses is paired with wine or beer to compliment their flavours.</p>
             </div>
             <div>
-              <h4>FIRDAY JUNE 14TH</h4>
+              <h4>FRIDAY JUNE 14TH</h4>
               <h5>LOCATION TO BE REVEALED...</h5>
               <p><strong>Along the sparkling shores of Kempenfelt Bay at our beautiful Heritage Park</strong></p>
             </div>
@@ -124,12 +124,15 @@ const IndexPage = () => (
       <section id="section7" style={{ height: '500px', backgroundColor: '#808080', backgroundImage: `url(${marblebg})`}}>
         <div className="container">
           <div className="column left-justify white">
-            <h2>PastEvents</h2>
+            <h2>Past Events</h2>
             <h2>#BARRIECURBAPPEAL</h2>
-            <a href="facebook.com"><img src={iconFacebook} alt="Facebook icon" /></a>
-            <a href="twitter.com"><img src={iconTwitter} alt="Twitter icon" /></a>
-            <a href="instagram.com"><img src={iconInstagram} alt="Instagram icon" /></a>
-            <a href="youtube.com"><img src={iconYouTube} alt="YouTube icon" /></a>
+            <div className="socialIcons">
+              <a href="facebook.com"><img src={iconFacebook} alt="Facebook icon" /></a>
+              <a href="twitter.com"><img src={iconTwitter} alt="Twitter icon" /></a>
+              <a href="instagram.com"><img src={iconInstagram} alt="Instagram icon" /></a>
+              <a href="youtube.com"><img src={iconYouTube} alt="YouTube icon" /></a>
+            </div>
+            <strong>@BARRIECURBAPPEAL</strong>
           </div>
           <div className="column">
             <iframe width="448" height="252" src="https://www.youtube.com/embed/tEKA6Cdspw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
