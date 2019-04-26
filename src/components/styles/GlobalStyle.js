@@ -28,6 +28,9 @@ const GlobalStyle = createGlobalStyle`
   .white {
     color:${theme.white};
   }
+  .black {
+    color:${theme.black};
+  }
 
   a, a:active, a:visited {
     color:${theme.primaryColor};
@@ -67,8 +70,11 @@ const GlobalStyle = createGlobalStyle`
       margin-right:10px;
     }
   } 
+  .sectionIcon {
+    margin-bottom:20px;
+  }
   #intro {
-    margin-bottom:40px;
+    margin-bottom:80px;
   }
   h1, h2, h3, h4, h5 {
     width:100%;
@@ -89,6 +95,16 @@ const GlobalStyle = createGlobalStyle`
     color:${theme.secondaryColor};
     font-size:4rem;
     font-weight:300;
+    margin-bottom:40px;
+  }
+  h4 {
+    font-size:4rem;
+    font-weight:300;
+  }
+  h5 {
+    font-size:1.8rem;
+    letter-spacing:.8rem;
+    font-weight:600;
   }
   p {
     margin-top:10px;
@@ -96,6 +112,9 @@ const GlobalStyle = createGlobalStyle`
     width:100%;
     max-width: 900px;
     margin: 0 auto;
+  }
+  strong {
+    font-weight:600;
   }
   .left-justify {
     text-align:left;

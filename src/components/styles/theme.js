@@ -5,6 +5,7 @@ const theme = {
   tertiaryColor: '#33323e',
   white: '#ffffff',
   grey: '#959595',
+  black: '#33323e'
 }
 
 export default theme

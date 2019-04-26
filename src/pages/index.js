@@ -24,6 +24,8 @@ import iconYouTube from '../images/iconYoutube.png'
 import iconTwitter from '../images/iconTwitter.png'
 import iconFacebook from '../images/iconFacebook.png'
 import iconInstagram from '../images/iconInstagram.png'
+import iconMartini from '../images/iconMartini.png'
+import headerLogo from '../images/curbappeal-logo.png'
 
 
 const partners = [
@@ -46,9 +48,11 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`Curb Appeal`, `Downtown Barrie`, `Dining Event`, `Outdoor Dining Event`]} />
     <article>
-      <section id="section1" style={{ height: '500px', backgroundColor: '#DCDCDC', backgroundImage: `url(${wallbg})` }}>
+      <section id="section1" style={{ height: '400px', backgroundColor: '#DCDCDC', backgroundImage: `url(${wallbg})` }}>
         <div className="container">
-          <CurbAppealLogo className="headerLogo" />    
+          <div className="column">
+            <img src={headerLogo} alt="Curb Appeal Logo" />
+          </div>
         </div>
       </section>
       <section id="promoVideo" style={{ height: '378px', background: 'transparent', marginTop: '-189px', padding: '0' }}>
@@ -65,7 +69,7 @@ const IndexPage = () => (
               <p>This event shines the light on a unique pocket of real estate in Barrie's downtown core each year. We've selected some of the city's best chefs to showcase their world-class talents. Each of the five courses is paired with wine or beer to compliment their flavours.</p>
             </div>
             <div>
-              <h4>FRIDAY JUNE 14TH</h4>
+              <h4 className="black">FRIDAY JUNE 14TH</h4>
               <h5>LOCATION TO BE REVEALED...</h5>
               <p><strong>Along the sparkling shores of Kempenfelt Bay at our beautiful Heritage Park</strong></p>
             </div>
@@ -82,8 +86,10 @@ const IndexPage = () => (
       </section>
       <section id="section4" style={{ backgroundColor: '#fff' , backgroundImage: `url(${specklebg})`}}>
         <div className="container space-between">
+          <div className="column sectionIcon">
+            <img src={iconMartini} alt="martini glass icon" />
+          </div>          
           <h3>The Chefs</h3>
-
 
           {Object.keys(chefs2).map(function(key) {
             return <div className="column chef-column">

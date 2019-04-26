@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import MailchimpSubscribe from "./MailchimpSubscribe"
-import { Link } from 'gatsby'
 import styled from 'styled-components'
 import ReactHtmlParser from 'react-html-parser'
 
@@ -19,14 +18,11 @@ const StyledSubscriptionForm = styled.div`
 `
 // a basic form
 const CustomSignupForm = ({ status, message, onValidated, step, formaction }) => {
-  let email, fname, lname, promo, dealerOffers, promoOffers;
+  let email, fname, lname;
   const submit = () =>
     email &&
     fname &&
-    lname &&
-    promo &&
-    dealerOffers &&
-    promoOffers &&
+    lname &&    
     email.value.indexOf("@") > -1 &&
     onValidated({
       EMAIL: email.value,

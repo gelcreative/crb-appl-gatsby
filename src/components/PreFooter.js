@@ -38,7 +38,7 @@ const StyledPreFooter = styled.section`
 
 const PreFooter = () => {
   return (
-    <StyledPreFooter id="section8" style={{ height: '500px', backgroundColor: '#ebebeb' }}>
+    <StyledPreFooter id="section8" style={{ height: '300px', backgroundColor: '#ebebeb' }}>
         <div className="container">
           <div className="column downtownbarrie-logo-column">
             <BBIALogo />

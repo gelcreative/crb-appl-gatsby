@@ -9,7 +9,7 @@ const CurbAppealLogo = () => {
         query {
           curbAppealLogo: file(relativePath: { eq: "curbappeal-logo.png"}) {
             childImageSharp {
-              fluid(maxWidth: 300) {
+              fluid(maxWidth: 300, maxHeight: 300) {
                 ...GatsbyImageSharpFluid
               }
             }
