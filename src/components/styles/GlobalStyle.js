@@ -64,6 +64,13 @@ const GlobalStyle = createGlobalStyle`
   .column {
     flex:1;
   }
+  .close {
+    position:absolute;
+    top:10px;
+    right:10px;
+    color:${props => props.theme.white};
+    font-size:2rem;
+  }
   .socialIcons {
     margin-bottom: 90px;
     a {

@@ -14,6 +14,7 @@ import GlobalStyle from './styles/GlobalStyle'
 import theme from './styles/theme'
 import Header from './Header'
 import Footer from './Footer'
+import ModalFooter from './ModalFooter'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -34,7 +35,9 @@ const Layout = ({ children }) => (
           <GlobalStyle />
             <Header />
             <main role="main">{children}</main>
+            <ModalFooter />
             <Footer />
+            
         </>
       </ThemeProvider>
     )}
