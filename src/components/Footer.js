@@ -55,6 +55,10 @@ section {
     margin: 2rem;
   }
 }
+h4 {
+  font-weight:600;
+  font-size:3.2rem;
+}
 footer {
   height:inherit;
 }
