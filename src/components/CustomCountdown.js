@@ -28,7 +28,7 @@ const datelogic = () => {
 
   //dates have to be in reverse order in the array ( array keys count down )
   var thedates = [];
-  // thedates['3'] = new Date("April 30, 2019 10:28:00").getTime();
+  thedates['3'] = new Date("April 30, 2019 10:28:00").getTime();
   thedates['2'] = new Date("April 19, 2019 01:15:00").getTime();
   thedates['1'] = new Date("April 22, 2019 01:15:00").getTime();
   //set 2 hour ticket window

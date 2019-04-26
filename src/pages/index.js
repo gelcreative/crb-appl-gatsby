@@ -35,6 +35,15 @@ const partners = [
     { logo: ripejuice, link: '#' },
     { logo: jadore, link: '#' }
 ]
+
+const sponsers = [
+  { logo: grillicious, link: '#' },
+  { logo: oliveoilco, link: '#' },
+  { logo: homestead, link: '#' },
+  { logo: ripejuice, link: '#' },
+  { logo: jadore, link: '#' }
+]
+
 const chefs2 = [
     { name: "Amanda Rider", img: commongoodlogo, link: '#', blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan." },
     { name: "Sarah Jones", img: dunlopstlogo, link: '#', blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan." },
@@ -48,19 +57,19 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`Curb Appeal`, `Downtown Barrie`, `Dining Event`, `Outdoor Dining Event`]} />
     <article>
-      <section id="section1" style={{ height: '400px', backgroundColor: '#DCDCDC', backgroundImage: `url(${wallbg})` }}>
+      <section id="section1" style={{ minHeight: '400px', backgroundColor: '#DCDCDC', backgroundImage: `url(${wallbg})` }}>
         <div className="container">
           <div className="column">
             <img src={headerLogo} alt="Curb Appeal Logo" />
           </div>
         </div>
       </section>
-      <section id="promoVideo" style={{ height: '378px', background: 'transparent', marginTop: '-189px', padding: '0' }}>
+      <section id="promoVideo" style={{ Height: '378px', background: 'transparent', marginTop: '-189px', padding: '0' }}>
         <div className="container">
           <iframe width="672" height="378" src="https://www.youtube.com/embed/tEKA6Cdspw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
         </div>
       </section>
-      <section id="section2" style={{ height: '500px', backgroundColor: '#fff', backgroundImage: `url(${spicebg})`, backgroundSize: 'initial', backgroundPosition:'right center' }}>
+      <section id="section2" style={{ minHeight: '500px', backgroundColor: '#fff', backgroundImage: `url(${spicebg})`, backgroundSize: 'initial', backgroundPosition:'right center' }}>
         <div className="container center">
           <div className="column">
             <div id="intro">
@@ -71,13 +80,13 @@ const IndexPage = () => (
             <div>
               <h4 className="black">FRIDAY JUNE 14TH</h4>
               <h5>LOCATION TO BE REVEALED...</h5>
-              <p><strong>Along the sparkling shores of Kempenfelt Bay at our beautiful Heritage Park</strong></p>
+              {/* <p><strong>Along the sparkling shores of Kempenfelt Bay at our beautiful Heritage Park</strong></p> */}
             </div>
           </div>
         </div>
       </section>
       
-      <section id="section3" style={{ height: '500px', backgroundColor: '#D3D3D3', backgroundImage: `url(${cuttingboardbg})` }}>
+      <section id="section3" style={{ minHeight: '500px', backgroundColor: '#D3D3D3', backgroundImage: `url(${cuttingboardbg})` }}>
         <div className="container center white">
           <div className="column">
              <CustomCountdown/>
@@ -106,28 +115,37 @@ const IndexPage = () => (
           
         </div>
       </section>
-      <section id="section5" style={{ height: '500px', backgroundColor: '#A9A9A9', backgroundImage: `url(${platterbg})` }}>
+      <section id="section5" style={{ minHeight: '500px', backgroundColor: '#A9A9A9', backgroundImage: `url(${platterbg})` }}>
         <div className="container">
           <h3 className="centered white">with</h3>           
         </div>
         <div className="container center container-partners">
-              {Object.keys(partners).map(function(key) {
-                
-                return <div className="column">  
-                          <a href={partners[key]['link']}><img src={partners[key]['logo']} alt="logo" /></a>
-                      </div>
-                })
+            <h2 className="white"> Coming Soon...</h2>
+            {/* {Object.keys(partners).map(function(key) {
+              
+              return <div className="column">  
+                        <a href={partners[key]['link']}><img src={partners[key]['logo']} alt="logo" /></a>
+                    </div>
+              })
 
-                }
-            </div>
+            } */}
+        </div>
       </section>
-      <section id="section6" style={{ height: '500px', backgroundColor: '#fff' }}>
+      <section id="section6" style={{ minHeight: '500px', backgroundColor: '#fff' }}>
         <div className="container">
           <h3>Sponsors</h3>
+          {Object.keys(sponsers).map(function(key) {
+              
+              return <div className="column">  
+                        <a href={sponsers[key]['link']}><img src={sponsers[key]['logo']} alt="logo" /></a>
+                    </div>
+              })
+
+            }
           
         </div>
       </section>
-      <section id="section7" style={{ height: '500px', backgroundColor: '#808080', backgroundImage: `url(${marblebg})`}}>
+      <section id="section7" style={{ minHeight: '500px', backgroundColor: '#808080', backgroundImage: `url(${marblebg})`}}>
         <div className="container">
           <div className="column left-justify white">
             <h2>Past Events</h2>
