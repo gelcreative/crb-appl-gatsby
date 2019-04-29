@@ -28,6 +28,9 @@ const GlobalStyle = createGlobalStyle`
     background-position:center center;
     
   }
+  input {
+    border-radius: .5rem;
+  }
   body {
     background-color: ${theme.white};
     font-family: futura-pt, sans-serif;
