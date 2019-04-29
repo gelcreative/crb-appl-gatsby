@@ -149,10 +149,10 @@ const IndexPage = () => (
             <h2>Past Events</h2>
             <h2>#BARRIECURBAPPEAL</h2>
             <div className="socialIcons">
-              <a href="https://www.facebook.com/DowntownBarrieBusinessAssociation/"><img src={iconFacebook} alt="Facebook icon" /></a>
-              <a href="https://twitter.com/DowntownBarrie"><img src={iconTwitter} alt="Twitter icon" /></a>
-              <a href="https://www.instagram.com/downtownbarrie/tagram.com"><img src={iconInstagram} alt="Instagram icon" /></a>
-              <a href="https://www.youtube.com/channel/UCA60OYKOo0JmfTM91-yuBbA"><img src={iconYouTube} alt="YouTube icon" /></a>
+              <a href="https://www.facebook.com/DowntownBarrieBusinessAssociation/" target="_blank"><img src={iconFacebook} alt="Facebook icon" /></a>
+              <a href="https://twitter.com/DowntownBarrie" target="_blank"><img src={iconTwitter} alt="Twitter icon" /></a>
+              <a href="https://www.instagram.com/downtownbarrie" target="_blank"><img src={iconInstagram} alt="Instagram icon" /></a>
+              <a href="https://www.youtube.com/channel/UCA60OYKOo0JmfTM91-yuBbA" target="_blank"><img src={iconYouTube} alt="YouTube icon" /></a>
             </div>
             <strong>@BARRIECURBAPPEAL</strong>
           </div>
