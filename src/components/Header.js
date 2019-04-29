@@ -52,8 +52,7 @@ const StyledHeader = styled.header`
     margin: 1em 0;
 
     &.is-current {
-      pointer-events: none;
-
+      pointer-events: none;      
       a::after {
         background: transparent;
         content: '';
@@ -73,7 +72,8 @@ const StyledHeader = styled.header`
 
     a {
       text-decoration: none;
-
+      float:right;
+      margin-bottom: .5em;
       &::after {
         content: '';
         background-color: ${props => props.theme.primaryColor};
@@ -160,14 +160,15 @@ class Header extends Component {
         <div className="curbappeal-header-inner">
           <nav role="navigation">
             <Scrollspy
-              items={['section1', 'section2', 'section3', 'section4', 'section5']}
+              items={['section1', 'section2', 'section3', 'section4', 'section5', 'section7']}
               currentClassName="is-current"
             >
-              <li><a href="#section1"><span>section1</span></a></li>
-              <li><a href="#section2"><span>section2</span></a></li>
-              <li><a href="#section3"><span>section3</span></a></li>
-              <li><a href="#section4"><span>section4</span></a></li>
-              <li><a href="#section5"><span>section5</span></a></li>
+              <li><a href="#section1"><span>Home</span></a></li>
+              <li><a href="#section2"><span>Location</span></a></li>
+              <li><a href="#section3"><span>Tickets</span></a></li>
+              <li><a href="#section4"><span>Chefs</span></a></li>
+              <li><a href="#section5"><span>Sponsors</span></a></li>
+              <li><a href="#section7"><span>Past Events</span></a></li>
             </Scrollspy>
           </nav>
         </div>
