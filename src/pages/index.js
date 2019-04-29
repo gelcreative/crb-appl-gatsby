@@ -57,14 +57,14 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`Curb Appeal`, `Downtown Barrie`, `Dining Event`, `Outdoor Dining Event`]} />
     <article>
-      <section id="section1" style={{ minHeight: '400px', backgroundColor: '#DCDCDC', backgroundImage: `url(${wallbg})` }}>
+      <section id="section1" className="align-top" style={{ minHeight: '350px', backgroundColor: '#DCDCDC', backgroundImage: `url(${wallbg})` }}>
         <div className="container">
           <div className="column">
             <img src={headerLogo} alt="Curb Appeal Logo" />
           </div>
         </div>
       </section>
-      <section id="promoVideo" style={{ Height: '378px', background: 'transparent', marginTop: '-189px', padding: '0' }}>
+      <section id="promoVideo" style={{ Height: '378px', background: 'transparent', marginTop: '-149px', padding: '0' }}>
         <div className="container">
           <iframe width="672" height="378" src="https://www.youtube.com/embed/tEKA6Cdspw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
         </div>
@@ -86,7 +86,7 @@ const IndexPage = () => (
         </div>
       </section>
       
-      <section id="section3" style={{ minHeight: '500px', backgroundColor: '#D3D3D3', backgroundImage: `url(${cuttingboardbg})` }}>
+      <section id="section3" style={{ minHeight: '400px', backgroundColor: '#D3D3D3', backgroundImage: `url(${cuttingboardbg})` }}>
         <div className="container center white">
           <div className="column">
              <CustomCountdown/>
@@ -101,7 +101,7 @@ const IndexPage = () => (
           <h3>The Chefs</h3>
 
           {Object.keys(chefs2).map(function(key) {
-            return <div className="column chef-column">
+            return <div className="column chef-column" style={{minWidth:'218px'}}>
                     <div className="chef-logo-background">
                       <img src={chefs2[key]['img']} alt="logo" />
                     </div>
@@ -115,11 +115,9 @@ const IndexPage = () => (
           
         </div>
       </section>
-      <section id="section5" style={{ minHeight: '500px', backgroundColor: '#A9A9A9', backgroundImage: `url(${platterbg})` }}>
+      <section id="section5" clasName="align-top" style={{ minHeight: '500px', backgroundColor: '#A9A9A9', backgroundImage: `url(${platterbg})` }}>
         <div className="container">
-          <h3 className="centered white">with</h3>           
-        </div>
-        <div className="container center container-partners">
+          <h3 className="centered white">with</h3>                 
             <h2 className="white"> Coming Soon...</h2>
             {/* {Object.keys(partners).map(function(key) {
               
@@ -131,7 +129,7 @@ const IndexPage = () => (
             } */}
         </div>
       </section>
-      <section id="section6" style={{ minHeight: '500px', backgroundColor: '#fff' }}>
+      <section id="section6" clasName="align-top" style={{ minHeight: '500px', backgroundColor: '#fff' }}>
         <div className="container">
           <h3>Sponsors</h3>
           {Object.keys(sponsers).map(function(key) {

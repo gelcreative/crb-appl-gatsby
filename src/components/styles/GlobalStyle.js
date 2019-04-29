@@ -11,12 +11,22 @@ const GlobalStyle = createGlobalStyle`
   html {
     font-size: 10px;
   }
+  .hamburger {
+    width: 100%;
+    text-align: right;
+  }
   section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-flow: row wrap;
     padding-top:4rem;
     padding-bottom:4rem;
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center center;
+    
   }
   body {
     background-color: ${theme.white};
@@ -60,6 +70,10 @@ const GlobalStyle = createGlobalStyle`
   }
   .space-between {
     justify-content: space-between;
+  }
+
+  .align-top {
+    align-items: baseline;
   }
   .column {
     flex:1;
@@ -140,6 +154,7 @@ const GlobalStyle = createGlobalStyle`
     border:1px solid ${theme.grey};
     max-width:18%;
     padding-bottom:50px;
+    margin-bottom:20px;
     // margin:0 15px;
     h4 {
       font-weight:600;

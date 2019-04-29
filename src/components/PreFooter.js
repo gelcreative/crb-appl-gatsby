@@ -6,10 +6,6 @@ import BBIALogo from '../components/BBIALogo'
 const StyledPreFooter = styled.section`
   background-color: ${props => props.theme.tertiaryColor};
   .container {
-    display: flex;
-    align-items: center;
-    justify-content: stretch;
-    flex-wrap: wrap;
     .column {
       margin: 2rem;
     }
@@ -57,6 +53,7 @@ const PreFooter = () => {
           </div>
           
         </div>
+        <div className="clearfix"></div>
         <div className="container">
           <div className="copywrite">
             <small>&copy; {new Date().getFullYear()} Downtown Barrie Business Improvement Area</small>
