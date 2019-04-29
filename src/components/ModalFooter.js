@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactModal from 'react-modal'
 import styled from 'styled-components'
-import StyledFooter from './footer'
+import StyledFooter from './Footer'
 
 const customStyles = {
   overlay : {
