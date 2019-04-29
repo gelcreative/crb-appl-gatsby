@@ -20,6 +20,11 @@ import oliveoilco from '../images/partners/BarrieOliveOil-Co-logo-white.png'
 import homestead from '../images/partners/Homestead-logo-white.png'
 import ripejuice from '../images/partners/RIPE-Juicery-logo-white.png'
 import jadore from '../images/partners/Jadore-logo-white.png'
+import grilliciousBlack from '../images/partners/Grillicious-Gourtmet-logo-black.png'
+import oliveoilcoBlack from '../images/partners/BarrieOliveOil-Co-logo-black.png'
+import homesteadBlack from '../images/partners/Homestead-logo-black.png'
+import ripejuiceBlack from '../images/partners/RIPE-Juicery-logo-black.png'
+import jadoreBlack from '../images/partners/Jadore-logo-black.png'
 import iconYouTube from '../images/iconYoutube.png'
 import iconTwitter from '../images/iconTwitter.png'
 import iconFacebook from '../images/iconFacebook.png'
@@ -37,11 +42,11 @@ const partners = [
 ]
 
 const sponsers = [
-  { logo: grillicious, link: '#' },
-  { logo: oliveoilco, link: '#' },
-  { logo: homestead, link: '#' },
-  { logo: ripejuice, link: '#' },
-  { logo: jadore, link: '#' }
+  { logo: grilliciousBlack, link: '#' },
+  { logo: oliveoilcoBlack, link: '#' },
+  { logo: homesteadBlack, link: '#' },
+  { logo: ripejuiceBlack, link: '#' },
+  { logo: jadoreBlack, link: '#' }
 ]
 
 const chefs2 = [
