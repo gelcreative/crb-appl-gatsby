@@ -43,7 +43,7 @@ import gallery6 from '../images/gallery/thumbnail6-live-music-curb-appeal-event.
 
 
 const partners = [
-    { logo: chillz, link: 'https://www.chillzlounge.com/' },
+  /*  { logo: chillz, link: 'https://www.chillzlounge.com/' },*/
     { logo: oliveoilco, link: 'https://oliveoilco.ca/' },
     { logo: homestead, link: 'http://www.homesteadartisanbakery.com/' },
     { logo: ripejuice, link: 'https://www.ripejuicery.ca/' },
