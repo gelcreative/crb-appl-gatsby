@@ -3,7 +3,8 @@ import styled from "styled-components"
 import Countdown from 'react-countdown-now'
 
 // Random component
-const Completionist = () => <div><h2 className="white">Tickets now available!</h2><p>Don't miss out! Purchase your tickets before it sells out!</p><br /><br /><button className="button-dark">BUY TICKETS NOW</button></div>
+// const Completionist = () => <div><h2 className="white">Tickets Now Available!</h2><p>Don't miss out! Purchase your tickets before it sells out!</p><br /><br /><a className="button-dark" href="https://www.eventbrite.ca/e/curb-appeal-2019-tickets-61866109198?" target="_blank">BUY TICKETS NOW</a></div>
+const Completionist = () => <div><h2 className="white">Curb Appeal Insider Tickets Now Available!</h2><p>available via to VIPs through your email notification</p></div>
 
 // Renderer callback with condition
 
@@ -28,11 +29,11 @@ const datelogic = () => {
 
   //dates have to be in reverse order in the array ( array keys count down )
   var thedates = [];
-  thedates['3'] = new Date("April 30, 2019 10:28:00").getTime();
-  thedates['2'] = new Date("April 19, 2019 01:15:00").getTime();
-  thedates['1'] = new Date("April 22, 2019 01:15:00").getTime();
-  //set 2 hour ticket window
-  var ticketwindow = 2*1000*60*60;
+  thedates['3'] = new Date("May 17, 2019 07:00:00").getTime();
+  thedates['2'] = new Date("May 24, 2019 07:00:00").getTime();
+  thedates['1'] = new Date("May 31, 2019 07:00:00").getTime();
+  //set ticket window
+  var ticketwindow = 4.5*1000*60*60;
 
   var currentdate=Date.now();
   var timerdate='';
@@ -61,7 +62,10 @@ const StyledCountdown = styled.div`
           display:inline-block;
           margin-right:5px;
           text-transform: uppercase;
-          line-weight:100;          
+          line-weight:100;   
+          @media screen and (max-width:600px){
+            font-size:.75em; 
+          }
           em {
             position:relative;
             display:inline-block;
@@ -72,10 +76,16 @@ const StyledCountdown = styled.div`
             padding:10px 20px;
             background:#ebebeb;
             color:#a4a4a4;            
-            display:block;
+            display:block;            
             width:1.25em;
             height:1.25em;
             line-height:1.25em;
+            @media screen and (max-width:600px){
+              width:.75em;
+              height:1.25em;
+              line-height:1.25em;
+              font-size:1.5em;
+            }
             &:after {            
               width:2.31em;
               margin-left:-20px;

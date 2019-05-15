@@ -26,10 +26,11 @@ const GlobalStyle = createGlobalStyle`
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center center;
-    
+    overflow:hidden;
   }
   input {
     border-radius: .5rem;
+    margin-bottom:5px;
   }
   body {
     background-color: ${theme.white};
@@ -60,7 +61,7 @@ const GlobalStyle = createGlobalStyle`
     max-width: 95%;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     text-align:center;
@@ -81,12 +82,49 @@ const GlobalStyle = createGlobalStyle`
   .column {
     flex:1;
   }
+  .column.chef-column {
+    border:1px solid ${theme.grey};
+    max-width:18%;
+    padding-bottom:50px;
+    margin-bottom:20px;
+    // margin:0 15px;
+    h4 {
+      font-weight:600;
+      font-size:2.25rem;
+      text-transform:uppercase;
+      margin-top:30px;
+    }
+    p {
+      box-sizing:border-box;
+      padding:10px 10px 40px 10px;
+      height:55%;
+    }
+    a {
+      border-bottom: 1px solid ${theme.grey};
+    }
+  }
+  @media screen and (max-width:1157px){
+    .container {
+      display:block;     
+    }
+    .column.chef-column {
+      max-width:100%;
+    }
+    .ReactModalPortal {
+      display:none;
+    }
+    
+  }
   .close {
     position:absolute;
     top:10px;
     right:10px;
     color:${props => props.theme.white};
     font-size:2rem;
+  }
+  .galleryThumbnail {
+    max-width:150px;
+    padding:5px;
   }
   .socialIcons {
     margin-bottom: 90px;
@@ -153,26 +191,7 @@ const GlobalStyle = createGlobalStyle`
     justify-content: center;
   }
 
-  .column.chef-column {
-    border:1px solid ${theme.grey};
-    max-width:18%;
-    padding-bottom:50px;
-    margin-bottom:20px;
-    // margin:0 15px;
-    h4 {
-      font-weight:600;
-      font-size:2.25rem;
-      text-transform:uppercase;
-      margin-top:30px;
-    }
-    p {
-      box-sizing:border-box;
-      padding:10px 10px 40px 10px;
-    }
-    a {
-      border-bottom: 1px solid ${theme.grey};
-    }
-  }
+  
   button, input[type='submit'] {
     border:0;
     border-radius:.5rem;
@@ -188,6 +207,12 @@ const GlobalStyle = createGlobalStyle`
   .button-dark {
     background:${theme.primaryColor};
     color:${theme.white};
+    height:4rem;
+    padding:0 2rem;  
+    line-height:4rem;
+  }
+  a.button-dark {
+    color:${theme.white};
   }
   .row {
     display:flex;
@@ -198,6 +223,9 @@ const GlobalStyle = createGlobalStyle`
   @media screen and (max-width:600px){
     .column {
       flex-direction: column;
+    }
+    button, input[type='submit'] {
+      width:100%;
     }
   }
 `

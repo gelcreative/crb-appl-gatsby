@@ -1,4 +1,4 @@
-import React from "react"
+import React, { lazy } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import CustomCountdown from "../components/CustomCountdown"
@@ -9,6 +9,7 @@ import dunlopstlogo from '../images/chefs/dunlop-street-diner-logo.png'
 import groovytuesdayslogo from '../images/chefs/groovy-tuesdays-logo.png'
 import paintershalllogo from '../images/chefs/painters-hall-logo.png'
 import thefarmhouselogo from '../images/chefs/the-farmhouse-logo.png'
+import lazytulip from '../images/chefs/the-lazy-tuplic-white-logo.png'
 import wallbg from '../images/wall-background.png'
 import spicebg from '../images/spice-background.png'
 import cuttingboardbg from '../images/cuttingboard-background.png'
@@ -31,6 +32,13 @@ import iconFacebook from '../images/iconFacebook.png'
 import iconInstagram from '../images/iconInstagram.png'
 import iconMartini from '../images/iconMartini.png'
 import headerLogo from '../images/curbappeal-logo.png'
+import gallery1 from '../images/gallery/thumbnail-table-decor-curb-appeal-event.jpg'
+import gallery2 from '../images/gallery/thumbnail2-chef-curb-appeal-event.jpg'
+import gallery3 from '../images/gallery/thumbnail3-homestead-bakery-curb-appeal-event.jpg'
+import gallery4 from '../images/gallery/thumbnail4-corn-curb-appeal-event.jpg'
+import gallery5 from '../images/gallery/thumbnail5-guest-curb-appeal-event.jpg'
+import gallery6 from '../images/gallery/thumbnail6-live-music-curb-appeal-event.jpg'
+
 
 
 const partners = [
@@ -50,11 +58,11 @@ const sponsers = [
 ]
 
 const chefs2 = [
-    { name: "Kevin Isherwood", img: commongoodlogo, link: '#', blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan." },
-    { name: "Amanda Rider", img: dunlopstlogo, link: '#', blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan." },
-    { name: "Sarah Jones", img: groovytuesdayslogo, link: '#', blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan." },
-    { name: "Painter's Hall", img: paintershalllogo, link: '#', blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan." },
-    { name: "Randy Feltis", img: thefarmhouselogo, link: '#', blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan." },
+    { name: "Randy Feltis", img: thefarmhouselogo, link: '#', blurb: "Randy uses only sustainable fish and the freshest meats and vegetables. They are animal lovers and tree huggers. They even grow their own herbs and spices, providing the freshest flavours in every bite." },
+    { name: "Amanda Rider", img: dunlopstlogo, link: '#', blurb: "Chef Amanda Rider brings a special flare to the food at the Diner. Locally sourced ingredients, made from scratch, have resulted in an incredible menu that delivers on the promise of great food in a casual atmosphere." },
+    { name: "Sarah Jones", img: groovytuesdayslogo, link: '#', blurb: "Groovy Tuesday’s intimate, contemporary eatery offers something different and delicious with every visit. Everything is made from fresh ingredients with love. Feed your heart and soul with homestyle comforts featuring a modern edge." },
+    { name: "Michelle Huggins", img: lazytulip, link: '#', blurb: "A soulful breakfast and lunch joint located in downtown Barrie offering healthy food options with a focus on vegetarian and gluten-free foods." },
+    { name: "Kevin Isherwood", img: commongoodlogo, link: '#', blurb: "Common Good offers unique selections using fresh, seasonal inspirations. Their community-minded spirit means espresso roasted in Toronto, Ontario small batch liquors and locally-sourced products. Let them introduce you to your new favourite flavours, served by your new favourite baristas." },
 ]
 
 
@@ -70,8 +78,11 @@ const IndexPage = () => (
         </div>
       </section>
       <section id="promoVideo" style={{ Height: '378px', background: 'transparent', marginTop: '-149px', padding: '0' }}>
-        <div className="container">
-          <iframe width="672" height="378" src="https://www.youtube.com/embed/tEKA6Cdspw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        <div className="container" style={{maxWidth:'672px'}}>
+          {/* <div className="videoContainer" style={{maxWidth:'672px', maxHeight:'378px', Width:'672px', Height:'378px'}}> */}
+          <div className="videoContainer" style={{position: 'relative', paddingBottom: '56.25%', height: '0', maxWidth: '100%', width:'100%'}}>
+            <iframe style={{position: 'absolute',top: '0',left: '0',width: '100%', height: '100%'}} src="https://www.youtube.com/embed/tEKA6Cdspw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+          </div>
         </div>
       </section>
       <section id="section2" style={{ minHeight: '500px', backgroundColor: '#fff', backgroundImage: `url(${spicebg})`, backgroundSize: 'initial', backgroundPosition:'right center' }}>
@@ -104,7 +115,7 @@ const IndexPage = () => (
             <img src={iconMartini} alt="martini glass icon" />
           </div>          
           <h3>The Chefs</h3>
-
+  
           {Object.keys(chefs2).map(function(key) {
             return <div className="column chef-column" style={{minWidth:'218px'}}>
                     <div className="chef-logo-background">
@@ -122,29 +133,29 @@ const IndexPage = () => (
       </section>
       <section id="section5" clasName="align-top" style={{ minHeight: '500px', backgroundColor: '#A9A9A9', backgroundImage: `url(${platterbg})` }}>
         <div className="container">
-          <h3 className="centered white">with</h3>                 
-            <h2 className="white"> Coming Soon...</h2>
-            {/* {Object.keys(partners).map(function(key) {
+          <h3 className="centered white">with</h3>                            
+            {Object.keys(partners).map(function(key) {
               
               return <div className="column">  
                         <a href={partners[key]['link']}><img src={partners[key]['logo']} alt="logo" /></a>
                     </div>
               })
 
-            } */}
+            }
         </div>
       </section>
       <section id="section6" clasName="align-top" style={{ minHeight: '500px', backgroundColor: '#fff' }}>
         <div className="container">
           <h3>Sponsors</h3>
-          {Object.keys(sponsers).map(function(key) {
+          <h2> Coming Soon...</h2>
+          {/* {Object.keys(sponsers).map(function(key) {
               
               return <div className="column">  
                         <a href={sponsers[key]['link']}><img src={sponsers[key]['logo']} alt="logo" /></a>
                     </div>
               })
 
-            }
+            } */}
           
         </div>
       </section>
@@ -162,11 +173,22 @@ const IndexPage = () => (
             <strong>@BARRIECURBAPPEAL</strong>
           </div>
           <div className="column">
-            <iframe width="448" height="252" src="https://www.youtube.com/embed/tEKA6Cdspw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="448" height="252" src="https://www.youtube.com/embed/BktyzM3hRSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+            <div className="videoContainer" style={{position: 'relative', paddingBottom: '56.25%', height: '0', maxWidth: '100%', width:'100%'}}>
+              <iframe style={{position: 'absolute',top: '0',left: '0',width: '100%', height: '100%'}} src="https://www.youtube.com/embed/BktyzM3hRSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            </div>
+            <div className="videoContainer" style={{position: 'relative', paddingBottom: '56.25%', height: '0', maxWidth: '100%', width:'100%'}}>
+              <iframe style={{position: 'absolute',top: '0',left: '0',width: '100%', height: '100%'}} src="https://www.youtube.com/embed/tEKA6Cdspw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            </div>
           </div>
           <div className="column white">
-            THUMBNAILS
+            
+            <img src={gallery1} alt="image from past curb appeal event" className="galleryThumbnail" />
+            <img src={gallery2} alt="image from past curb appeal event" className="galleryThumbnail" />
+            <img src={gallery3} alt="image from past curb appeal event" className="galleryThumbnail" />
+            <img src={gallery4} alt="image from past curb appeal event" className="galleryThumbnail" />
+            <img src={gallery5} alt="image from past curb appeal event" className="galleryThumbnail" />
+            <img src={gallery6} alt="image from past curb appeal event" className="galleryThumbnail" />
+            
           </div>          
         </div>
       </section>
