@@ -7,7 +7,7 @@ const StyledHeader = styled.header`
   right: 0;
   height: 100%;
   padding: 1em 2em;
-
+  z-index:9999;
   .hamburger {
     position: absolute;
     top: 0;

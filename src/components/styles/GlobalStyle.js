@@ -123,7 +123,7 @@ const GlobalStyle = createGlobalStyle`
     font-size:2rem;
   }
   .galleryThumbnail {
-    max-width:150px;
+    max-width:125px;
     padding:5px;
   }
   .socialIcons {

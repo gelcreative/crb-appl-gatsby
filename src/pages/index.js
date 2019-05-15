@@ -173,10 +173,10 @@ const IndexPage = () => (
             <strong>@BARRIECURBAPPEAL</strong>
           </div>
           <div className="column">
-            <div className="videoContainer" style={{position: 'relative', paddingBottom: '56.25%', height: '0', maxWidth: '100%', width:'100%'}}>
+            <div className="videoContainer" style={{position: 'relative', paddingBottom: '56.25%', height: '0', maxWidth: '100%', width:'100%', marginBottom:'10px'}}>
               <iframe style={{position: 'absolute',top: '0',left: '0',width: '100%', height: '100%'}} src="https://www.youtube.com/embed/BktyzM3hRSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-            </div>
-            <div className="videoContainer" style={{position: 'relative', paddingBottom: '56.25%', height: '0', maxWidth: '100%', width:'100%'}}>
+            </div>            
+            <div className="videoContainer" style={{position: 'relative', paddingBottom: '56.25%', height: '0', maxWidth: '100%', width:'100%', marginBottom:'10px'}}>
               <iframe style={{position: 'absolute',top: '0',left: '0',width: '100%', height: '100%'}} src="https://www.youtube.com/embed/tEKA6Cdspw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
             </div>
           </div>
@@ -188,7 +188,7 @@ const IndexPage = () => (
             <img src={gallery4} alt="image from past curb appeal event" className="galleryThumbnail" />
             <img src={gallery5} alt="image from past curb appeal event" className="galleryThumbnail" />
             <img src={gallery6} alt="image from past curb appeal event" className="galleryThumbnail" />
-            
+
           </div>          
         </div>
       </section>
