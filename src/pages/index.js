@@ -81,7 +81,7 @@ const IndexPage = () => (
         <div className="container" style={{maxWidth:'672px'}}>
           {/* <div className="videoContainer" style={{maxWidth:'672px', maxHeight:'378px', Width:'672px', Height:'378px'}}> */}
           <div className="videoContainer" style={{position: 'relative', paddingBottom: '56.25%', height: '0', maxWidth: '100%', width:'100%'}}>
-            <iframe style={{position: 'absolute',top: '0',left: '0',width: '100%', height: '100%'}} src="https://www.youtube.com/embed/tEKA6Cdspw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            <iframe style={{position: 'absolute',top: '0',left: '0',width: '100%', height: '100%'}} src="https://www.youtube.com/embed/Xi4OWBzaCOw?showinfo=0&controls=0&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
           </div>
         </div>
       </section>
@@ -174,10 +174,10 @@ const IndexPage = () => (
           </div>
           <div className="column">
             <div className="videoContainer" style={{position: 'relative', paddingBottom: '56.25%', height: '0', maxWidth: '100%', width:'100%', marginBottom:'10px'}}>
-              <iframe style={{position: 'absolute',top: '0',left: '0',width: '100%', height: '100%'}} src="https://www.youtube.com/embed/BktyzM3hRSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+              <iframe style={{position: 'absolute',top: '0',left: '0',width: '100%', height: '100%'}} src="https://www.youtube.com/embed/BktyzM3hRSM?showinfo=0&controls=0&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
             </div>            
             <div className="videoContainer" style={{position: 'relative', paddingBottom: '56.25%', height: '0', maxWidth: '100%', width:'100%', marginBottom:'10px'}}>
-              <iframe style={{position: 'absolute',top: '0',left: '0',width: '100%', height: '100%'}} src="https://www.youtube.com/embed/tEKA6Cdspw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+              <iframe style={{position: 'absolute',top: '0',left: '0',width: '100%', height: '100%'}} src="https://www.youtube.com/embed/tEKA6Cdspw0?showinfo=0&controls=0&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
             </div>
           </div>
           <div className="column white">
