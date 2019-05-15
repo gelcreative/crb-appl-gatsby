@@ -56,7 +56,7 @@ const PreFooter = () => {
         <div className="clearfix"></div>
         <div className="container">
           <div className="copywrite">
-            <small>&copy; {new Date().getFullYear()} Downtown Barrie Business Improvement Area</small>
+            <small>&copy; {new Date().getFullYear()} Downtown Barrie Business Association (BIA)</small>
           </div> 
         </div>       
     </StyledPreFooter>

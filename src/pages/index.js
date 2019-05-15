@@ -17,6 +17,7 @@ import specklebg from '../images/speckle-background.png'
 import platterbg from '../images/platter-background.png'
 import marblebg from '../images/marble-background.png'
 import grillicious from '../images/partners/Grillicious-Gourtmet-logo-white.png'
+import chillz from '../images/partners/chillz_lounge_white.png' 
 import oliveoilco from '../images/partners/BarrieOliveOil-Co-logo-white.png'
 import homestead from '../images/partners/Homestead-logo-white.png'
 import ripejuice from '../images/partners/RIPE-Juicery-logo-white.png'
@@ -42,11 +43,11 @@ import gallery6 from '../images/gallery/thumbnail6-live-music-curb-appeal-event.
 
 
 const partners = [
-    { logo: grillicious, link: '#' },
-    { logo: oliveoilco, link: '#' },
-    { logo: homestead, link: '#' },
-    { logo: ripejuice, link: '#' },
-    { logo: jadore, link: '#' }
+    { logo: chillz, link: 'https://www.chillzlounge.com/' },
+    { logo: oliveoilco, link: 'https://oliveoilco.ca/' },
+    { logo: homestead, link: 'http://www.homesteadartisanbakery.com/' },
+    { logo: ripejuice, link: 'https://www.ripejuicery.ca/' },
+    { logo: jadore, link: 'https://jadorefinecheese.com/?gclid=EAIaIQobChMI8N-E0fed4gIVih-tBh1towBoEAAYASAAEgJKufD_BwE' }
 ]
 
 const sponsers = [
@@ -58,11 +59,11 @@ const sponsers = [
 ]
 
 const chefs2 = [
-    { name: "Randy Feltis", img: thefarmhouselogo, link: '#', blurb: "Randy uses only sustainable fish and the freshest meats and vegetables. They are animal lovers and tree huggers. They even grow their own herbs and spices, providing the freshest flavours in every bite." },
-    { name: "Amanda Rider", img: dunlopstlogo, link: '#', blurb: "Chef Amanda Rider brings a special flare to the food at the Diner. Locally sourced ingredients, made from scratch, have resulted in an incredible menu that delivers on the promise of great food in a casual atmosphere." },
-    { name: "Sarah Jones", img: groovytuesdayslogo, link: '#', blurb: "Groovy Tuesday’s intimate, contemporary eatery offers something different and delicious with every visit. Everything is made from fresh ingredients with love. Feed your heart and soul with homestyle comforts featuring a modern edge." },
-    { name: "Michelle Huggins", img: lazytulip, link: '#', blurb: "A soulful breakfast and lunch joint located in downtown Barrie offering healthy food options with a focus on vegetarian and gluten-free foods." },
-    { name: "Kevin Isherwood", img: commongoodlogo, link: '#', blurb: "Common Good offers unique selections using fresh, seasonal inspirations. Their community-minded spirit means espresso roasted in Toronto, Ontario small batch liquors and locally-sourced products. Let them introduce you to your new favourite flavours, served by your new favourite baristas." },
+    { name: "Randy Feltis", img: thefarmhouselogo, link: 'https://www.facebook.com/BarrieFarmhouse/', blurb: "Randy uses only sustainable fish and the freshest meats and vegetables. They are animal lovers and tree huggers. They even grow their own herbs and spices, providing the freshest flavours in every bite." },
+    { name: "Amanda Rider", img: dunlopstlogo, link: 'https://dunlopstreetdiner.ca/', blurb: "Chef Amanda Rider brings a special flare to the food at the Diner. Locally sourced ingredients, made from scratch, have resulted in an incredible menu that delivers on the promise of great food in a casual atmosphere." },
+    { name: "Sarah Jones", img: groovytuesdayslogo, link: 'https://www.groovytuesdays.ca/', blurb: "Groovy Tuesday’s intimate, contemporary eatery offers something different and delicious with every visit. Everything is made from fresh ingredients with love. Feed your heart and soul with homestyle comforts featuring a modern edge." },
+    { name: "Michelle Huggins", img: lazytulip, link: 'https://lazytulipcafe.com/', blurb: "A soulful breakfast and lunch joint located in downtown Barrie offering healthy food options with a focus on vegetarian and gluten-free foods." },
+    { name: "Kevin Isherwood", img: commongoodlogo, link: 'https://commongood.cafe/', blurb: "Common Good offers unique selections using fresh, seasonal inspirations. Their community-minded spirit means espresso roasted in Toronto, Ontario small batch liquors and locally-sourced products. Let them introduce you to your new favourite flavours, served by your new favourite baristas." },
 ]
 
 
@@ -123,7 +124,7 @@ const IndexPage = () => (
                     </div>
                     <h4>{chefs2[key]['name']}</h4>
                     <p>{chefs2[key]['blurb']}</p>
-                    <a href={chefs2[key]['link']}>Learn More</a>
+                    <a href={chefs2[key]['link']} target="_blank">Learn More</a>
                   </div>
             })
 
@@ -137,7 +138,7 @@ const IndexPage = () => (
             {Object.keys(partners).map(function(key) {
               
               return <div className="column">  
-                        <a href={partners[key]['link']}><img src={partners[key]['logo']} alt="logo" /></a>
+                        <a href={partners[key]['link']} target="_blank"><img src={partners[key]['logo']} alt="logo" /></a>
                     </div>
               })
 

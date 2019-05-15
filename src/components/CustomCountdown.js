@@ -20,7 +20,7 @@ const renderer = ({ total, days, hours, minutes, seconds, completed }) => {
     total = today.getTime() + total;
     total = new Date(parseInt(total));
     //Render the timer
-    return <div><h2 className="white">Tickets coming soon...</h2><br /><time date={total}><span class="days">Days<em>{days}</em></span><span class="hours">Hours<em>{hours}</em></span><span class="minutes">Minutes<em>{minutes}</em></span><span class="seconds">Seconds<em>{seconds}</em></span></time></div>;
+    return <div><h2 className="white">Curb Appeal Insider Tickets Coming Soon...</h2><br /><time date={total}><span class="days">Days<em>{days}</em></span><span class="hours">Hours<em>{hours}</em></span><span class="minutes">Minutes<em>{minutes}</em></span><span class="seconds">Seconds<em>{seconds}</em></span></time></div>;
   }
 };
 
