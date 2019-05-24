@@ -3,6 +3,9 @@ import styled from "styled-components"
 import Countdown from 'react-countdown-now'
 
 // Random component
+
+const Completionist = () => <div><h2 className="white">Tier 3 Tickets Coming Soon...</h2><p>Don't miss out! Purchase your tickets before it sells out!</p><br /><br /><a className="button-dark" href="https://www.eventbrite.ca/e/curb-appeal-2019-tickets-61866109198?" target="_blank">MAY 31ST AT 7AM</a></div>
+
 // const Completionist = () => <div><h2 className="white">Tickets Now Available!</h2><p>Don't miss out! Purchase your tickets before it sells out!</p><br /><br /><a className="button-dark" href="https://www.eventbrite.ca/e/curb-appeal-2019-tickets-61866109198?" target="_blank">BUY TICKETS NOW</a></div>
 // const Completionist = () => <div><h2 className="white">Curb Appeal Insider Tickets Now Available!</h2><p>available via to VIPs through your email notification</p></div>
 
