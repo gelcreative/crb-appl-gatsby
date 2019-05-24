@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Countdown from 'react-countdown-now'
 
 // Random component
- const Completionist = () => <div><h2 className="white">Tickets Now Available!</h2><p>Don't miss out! Purchase your tickets before it sells out!</p><br /><br /><a className="button-dark" href="https://www.eventbrite.ca/e/curb-appeal-2019-tickets-61866109198?" target="_blank">BUY TICKETS NOW</a></div>
+// const Completionist = () => <div><h2 className="white">Tickets Now Available!</h2><p>Don't miss out! Purchase your tickets before it sells out!</p><br /><br /><a className="button-dark" href="https://www.eventbrite.ca/e/curb-appeal-2019-tickets-61866109198?" target="_blank">BUY TICKETS NOW</a></div>
 // const Completionist = () => <div><h2 className="white">Curb Appeal Insider Tickets Now Available!</h2><p>available via to VIPs through your email notification</p></div>
 
 // Renderer callback with condition
@@ -20,7 +20,7 @@ const renderer = ({ total, days, hours, minutes, seconds, completed }) => {
     total = today.getTime() + total;
     total = new Date(parseInt(total));
     //Render the timer
-    return <div><h2 className="white">Curb Appeal Insider Tickets Coming Soon...</h2><br /><time date={total}><span class="days">Days<em>{days}</em></span><span class="hours">Hours<em>{hours}</em></span><span class="minutes">Minutes<em>{minutes}</em></span><span class="seconds">Seconds<em>{seconds}</em></span></time></div>;
+    return <div><h2 className="white">Curb Appeal Insider Tier 3 Tickets Coming Soon...</h2><br /><time date={total}><span class="days">Days<em>{days}</em></span><span class="hours">Hours<em>{hours}</em></span><span class="minutes">Minutes<em>{minutes}</em></span><span class="seconds">Seconds<em>{seconds}</em></span></time></div>;
   }
 };
 
