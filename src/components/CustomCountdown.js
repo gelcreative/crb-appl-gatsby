@@ -4,9 +4,9 @@ import Countdown from 'react-countdown-now'
 
 // Random component
 
-const Completionist = () => <div><h2 className="white">Tier 3 Tickets Coming Soon...</h2><p>Don't miss out! Purchase your tickets before it sells out!</p><br /><br /><a className="button-dark" href="https://www.eventbrite.ca/e/curb-appeal-2019-tickets-61866109198?" target="_blank">FRIDAY MAY 31 AT 7AM</a></div>
+// const Completionist = () => <div><h2 className="white">Tier 3 Tickets Coming Soon...</h2><p>Don't miss out! Purchase your tickets before it sells out!</p><br /><br /><a className="button-dark" href="https://www.eventbrite.ca/e/curb-appeal-2019-tickets-61866109198?" target="_blank">FRIDAY MAY 31 AT 7AM</a></div>
 
-// const Completionist = () => <div><h2 className="white">Tickets Now Available!</h2><p>Don't miss out! Purchase your tickets before it sells out!</p><br /><br /><a className="button-dark" href="https://www.eventbrite.ca/e/curb-appeal-2019-tickets-61866109198?" target="_blank">BUY TICKETS NOW</a></div>
+const Completionist = () => <div><h2 className="white">Tickets Now Available!</h2><p>Don't miss out! Purchase your tickets before it sells out!</p><br /><br /><a className="button-dark" href="https://www.eventbrite.ca/e/curb-appeal-2019-tickets-61866109198?" target="_blank">BUY TICKETS NOW</a></div>
 // const Completionist = () => <div><h2 className="white">Curb Appeal Insider Tickets Now Available!</h2><p>available via to VIPs through your email notification</p></div>
 
 // Renderer callback with condition
@@ -32,11 +32,12 @@ const datelogic = () => {
 
   //dates have to be in reverse order in the array ( array keys count down )
   var thedates = [];
-  thedates['3'] = new Date("May 17, 2019 07:00:00").getTime();
-  thedates['2'] = new Date("May 24, 2019 07:00:00").getTime();
+  // thedates['3'] = new Date("May 17, 2019 07:00:00").getTime();
+  // thedates['2'] = new Date("May 24, 2019 07:00:00").getTime();
   thedates['1'] = new Date("May 31, 2019 07:00:00").getTime();
-  //set ticket window
-  var ticketwindow = 4.5*1000*60*60;
+  //set ticket window (in milliseconds)
+  //current formula = (hours)*(millisconds)*(seconds)*(minutes)
+  var ticketwindow = 24*1000*60*60;
 
   var currentdate=Date.now();
   var timerdate='';
