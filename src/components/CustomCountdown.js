@@ -6,7 +6,12 @@ import Countdown from 'react-countdown-now'
 
 // const Completionist = () => <div><h2 className="white">Tier 3 Tickets Coming Soon...</h2><p>Don't miss out! Purchase your tickets before it sells out!</p><br /><br /><a className="button-dark" href="https://www.eventbrite.ca/e/curb-appeal-2019-tickets-61866109198?" target="_blank">FRIDAY MAY 31 AT 7AM</a></div>
 
-const Completionist = () => <div><h2 className="white">Tickets Now Available!</h2><p>Don't miss out! Purchase your tickets before it sells out!</p><br /><br /><a className="button-dark" href="https://www.eventbrite.ca/e/curb-appeal-2019-tickets-61866109198?" target="_blank">BUY TICKETS NOW</a></div>
+//Tickets Sold Out
+const Completionist = () => <div><h2 className="white">This year's event is sold out!</h2></div>
+
+
+//Tickets Now Available (Tier 3)
+//const Completionist = () => <div><h2 className="white">Tickets Now Available!</h2><p>Don't miss out! Purchase your tickets before it sells out!</p><br /><br /><a className="button-dark" href="https://www.eventbrite.ca/e/curb-appeal-2019-tickets-61866109198?" target="_blank">BUY TICKETS NOW</a></div>
 // const Completionist = () => <div><h2 className="white">Curb Appeal Insider Tickets Now Available!</h2><p>available via to VIPs through your email notification</p></div>
 
 // Renderer callback with condition
