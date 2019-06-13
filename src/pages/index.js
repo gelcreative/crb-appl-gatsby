@@ -158,10 +158,9 @@ const IndexPage = () => (
           {Object.keys(sponsers).map(function(key) {
               
               return <div className="column">  
-                        <a href={sponsers[key]['link']}><img src={sponsers[key]['logo']} alt="logo" /></a>
+                        <a href={sponsers[key]['link'] } target="_blank"><img src={sponsers[key]['logo']} alt="logo" /></a>
                     </div>
               })
-
             }
           
         </div>
