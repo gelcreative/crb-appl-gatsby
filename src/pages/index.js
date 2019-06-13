@@ -27,6 +27,12 @@ import oliveoilcoBlack from '../images/partners/BarrieOliveOil-Co-logo-black.png
 import homesteadBlack from '../images/partners/Homestead-logo-black.png'
 import ripejuiceBlack from '../images/partners/RIPE-Juicery-logo-black.png'
 import jadoreBlack from '../images/partners/Jadore-logo-black.png'
+import CatherineStaples from '/images/sponsors/CatherineStaples_Logo.jpg'
+import CoulsonAssociates from '/images/sponsors/Coulson&Associates_Logo.png'
+import AudiBarrie from '/images/sponsors/AudiBarrie_Logo.png'
+import FivePoints from '/images/sponsors/TheResidenceAtFivePoints_Logo.png'
+import JenniferCameron from '/images/sponsors/JenniferCameron_Logo.png'
+import SolidGround from '/images/sponsors/SolidGround_Logo.png'
 import iconYouTube from '../images/iconYoutube.png'
 import iconTwitter from '../images/iconTwitter.png'
 import iconFacebook from '../images/iconFacebook.png'
@@ -51,11 +57,12 @@ const partners = [
 ]
 
 const sponsers = [
-  { logo: grilliciousBlack, link: '#' },
-  { logo: oliveoilcoBlack, link: '#' },
-  { logo: homesteadBlack, link: '#' },
-  { logo: ripejuiceBlack, link: '#' },
-  { logo: jadoreBlack, link: '#' }
+  { logo: CatherineStaples, link: 'https://www.catherinestaplesinteriors.com/' },
+  { logo: CoulsonAssociates, link: '#' },
+  { logo: AudiBarrie, link: 'https://audibarrie.ca/' },
+  { logo: FivePoints, link: 'https://fivepointsbarrie.ca/?gclid=Cj0KCQjw6IfoBRCiARIsAF6q06szzXiybbYzZrx2GtnYYvsXSNlxaAghhdXYvW45J8et6gQrAUvQEIcaAo97EALw_wcB' },
+  { logo: JenniferCameron, link: 'http://www.thecameronteam.ca/' }
+  { logo: SolidGround, link: 'https://www.solidgroundmortgages.com/' }
 ]
 
 const chefs2 = [
@@ -148,15 +155,14 @@ const IndexPage = () => (
       <section id="section6" clasName="align-top" style={{ minHeight: '500px', backgroundColor: '#fff' }}>
         <div className="container">
           <h3>Sponsors</h3>
-          <h2> Coming Soon...</h2>
-          {/* {Object.keys(sponsers).map(function(key) {
+          { {Object.keys(sponsers).map(function(key) {
               
               return <div className="column">  
                         <a href={sponsers[key]['link']}><img src={sponsers[key]['logo']} alt="logo" /></a>
                     </div>
               })
 
-            } */}
+            } }
           
         </div>
       </section>
