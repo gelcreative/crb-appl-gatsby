@@ -30,7 +30,7 @@ import jadoreBlack from '../images/partners/Jadore-logo-black.png'
 import CatherineStaples from '../images/sponsors/CatherineStaples_Logo.jpg'
 import CoulsonAssociates from '../images/sponsors/Coulson&Associates_Logo.png'
 import AudiBarrie from '../images/sponsors/AudiBarrie_Logo.png'
-import FivePoints from '../images/sponsors/TheResidenceAtFivePoints_Logo.png'
+import FivePoints from '../images/sponsors/TheResidenceAtFivePoints_LogoNEW.png'
 import JenniferCameron from '../images/sponsors/JenniferCameron_Logo.png'
 import SolidGround from '../images/sponsors/SolidGround_Logo.png'
 import iconYouTube from '../images/iconYoutube.png'
@@ -152,7 +152,7 @@ const IndexPage = () => (
             }
         </div>
       </section>
-      <section id="section6" className="align-top" style={{ minHeight: '500px', backgroundColor: '#fff' }}>
+      <section id="section6" className="align-top" style={{ minHeight: '250px', backgroundColor: '#fff' }}>
         <div className="container">
           <h3>Sponsors</h3>
           {Object.keys(sponsers).map(function(key) {
