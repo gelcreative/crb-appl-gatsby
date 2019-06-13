@@ -61,7 +61,7 @@ const sponsers = [
   { logo: CoulsonAssociates, link: '#' },
   { logo: AudiBarrie, link: 'https://audibarrie.ca/' },
   { logo: FivePoints, link: 'https://fivepointsbarrie.ca/?gclid=Cj0KCQjw6IfoBRCiARIsAF6q06szzXiybbYzZrx2GtnYYvsXSNlxaAghhdXYvW45J8et6gQrAUvQEIcaAo97EALw_wcB' },
-  { logo: JenniferCameron, link: 'http://www.thecameronteam.ca/' }
+  { logo: JenniferCameron, link: 'http://www.thecameronteam.ca/' },
   { logo: SolidGround, link: 'https://www.solidgroundmortgages.com/' }
 ]
 
@@ -152,17 +152,17 @@ const IndexPage = () => (
             }
         </div>
       </section>
-      <section id="section6" clasName="align-top" style={{ minHeight: '500px', backgroundColor: '#fff' }}>
+      <section id="section6" className="align-top" style={{ minHeight: '500px', backgroundColor: '#fff' }}>
         <div className="container">
           <h3>Sponsors</h3>
-          { {Object.keys(sponsers).map(function(key) {
+          {Object.keys(sponsers).map(function(key) {
               
               return <div className="column">  
                         <a href={sponsers[key]['link']}><img src={sponsers[key]['logo']} alt="logo" /></a>
                     </div>
               })
 
-            } }
+            }
           
         </div>
       </section>
