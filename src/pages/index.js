@@ -102,8 +102,8 @@ const IndexPage = () => (
               <p>This event shines the light on a unique pocket of real estate in Barrie's downtown core each year. We've selected some of the city's best chefs to showcase their world-class talents. Each of the five courses is paired with wine or beer to compliment their flavours.</p>
             </div>
             <div>
-              <h4 className="black">FRIDAY JUNE 14TH</h4>
-              <h5>LOCATION TO BE REVEALED...</h5>
+              <h4 className="black">FRIDAY JUNE 14TH  • HISTORTIC BARRIE ARMOURY</h4>
+              <h5>37 PARKSIDE DRIVE, BARRIE</h5>
               {/* <p><strong>Along the sparkling shores of Kempenfelt Bay at our beautiful Heritage Park</strong></p> */}
             </div>
           </div>
