@@ -81,7 +81,7 @@ const IndexPage = () => (
       <section id="section1" className="align-top" style={{ minHeight: '350px', backgroundColor: '#DCDCDC', backgroundImage: `url(${wallbg})` }}>
         <div className="container">
           <div className="column">
-            <img src={headerLogo} alt="Curb Appeal Logo" width="150px" />
+            <img src={headerLogo} alt="Curb Appeal Logo test" width="150px" />
           </div>
         </div>
       </section>
